@@ -7,7 +7,7 @@ Servo sv;
 RF24 radio(7, 8); // CE, CSN
 const byte address[6] = "00001"; // rcvr address
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   sv.attach(5);// servo attach at pin 5
   radio.begin();
   radio.openReadingPipe(0, address);
